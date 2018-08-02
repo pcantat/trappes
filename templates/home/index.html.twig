@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Coucou !! {{ controller_name }}!{% endblock %}
+
+{% block body %}
+
+This friendly message is coming from:{{ user.Prenom }} {{ user.Nom }}
+
+<img src="{{ absolute_url( asset('img/logo.png')) }} " alt="logo" width="100%">
+
+{% endblock %}
