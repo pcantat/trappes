@@ -1,11 +1,9 @@
+
 <?php
-
 namespace App\Repository;
-
 use App\Entity\Categories;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Symfony\Bridge\Doctrine\RegistryInterface;
-
 /**
  * @method Categories|null find($id, $lockMode = null, $lockVersion = null)
  * @method Categories|null findOneBy(array $criteria, array $orderBy = null)
@@ -18,7 +16,6 @@ class CategoriesRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, Categories::class);
     }
-
 //    /**
 //     * @return Categories[] Returns an array of Categories objects
 //     */
@@ -35,7 +32,6 @@ class CategoriesRepository extends ServiceEntityRepository
         ;
     }
     */
-
     /*
     public function findOneBySomeField($value): ?Categories
     {

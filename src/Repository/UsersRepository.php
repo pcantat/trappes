@@ -1,11 +1,9 @@
+
 <?php
-
 namespace App\Repository;
-
 use App\Entity\Users;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Symfony\Bridge\Doctrine\RegistryInterface;
-
 /**
  * @method Users|null find($id, $lockMode = null, $lockVersion = null)
  * @method Users|null findOneBy(array $criteria, array $orderBy = null)
@@ -18,7 +16,6 @@ class UsersRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, Users::class);
     }
-
 //    /**
 //     * @return Users[] Returns an array of Users objects
 //     */
@@ -35,7 +32,6 @@ class UsersRepository extends ServiceEntityRepository
         ;
     }
     */
-
     /*
     public function findOneBySomeField($value): ?Users
     {
