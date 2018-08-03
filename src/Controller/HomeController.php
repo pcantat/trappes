@@ -5,7 +5,6 @@ namespace App\Controller;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-
 class HomeController extends Controller
 {
     /**
@@ -13,13 +12,16 @@ class HomeController extends Controller
      */
     public function index()
     {
-         return $this->render('home/index.html.twig', [
-            'controller_name' => 'HomeController',
-            "user" => [
-                "Nom" => "Bob",
-                "Prenom" => "Patrick",
-                "avatar" => "https://www.usine-digitale.fr/mediatheque/0/3/4/000156430_homePageUne/securite-informatique-hacking.jpg",
-                "image" => "assets/static/images/500.png",
-            ]
-        ]);
+        // $number = random_int(1, 48);
+        // return $this->render('home/index.html.twig', [
+        //     'controller_name' => 'HomeController',
+        //     "user" => [
+        //         "prenom" => "Bob",
+        //         "nom" => "L'éponge",
+        //         'number' => $number,
+        //         'avatar' => "img/bobleponge.jpg",
+        //     ]
+        // ]);
+        return $this->render('offline/signin.html.twig');
     }
+}
